@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: Josefin Sans, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+header .logo {
+  width: 45%;
+  padding: 1rem;
+}
+
+.hero {
+  background-image: url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 15rem;
+  width: 100%;
+}
+
+.desktopView {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desktopView h1 {
+  text-align: center;
+  width: 11rem;
+  letter-spacing: .35rem;
+  color: #413a3a;
+}
+
+.desktopView h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.desktopView .text {
+  padding: .5rem 1rem;
+  color: #ce9797;
+  width: 19rem;
+  font-size: 14px;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.desktopView form {
+  margin-top: 1.5rem;
+  width: 17.5rem;
+}
+
+.desktopView form input {
+  border-radius: 24px;
+  border: 1px solid #ce9797;
+  padding: .75rem;
+  width: 100%;
+}
+
+.desktopView form ::-webkit-input-placeholder {
+  font-family: Josefin Sans;
+  color: #ce9797;
+}
+
+.desktopView form :-ms-input-placeholder {
+  font-family: Josefin Sans;
+  color: #ce9797;
+}
+
+.desktopView form ::-ms-input-placeholder {
+  font-family: Josefin Sans;
+  color: #ce9797;
+}
+
+.desktopView form ::placeholder {
+  font-family: Josefin Sans;
+  color: #ce9797;
+}
+
+.desktopView form button {
+  width: 20%;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  border: none;
+  border-radius: 24px;
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.desktopView form button:hover {
+  opacity: 80%;
+  width: 25%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.desktopView form .error {
+  color: #f96262;
+  position: absolute;
+  bottom: -45%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.desktopView form .error-icon {
+  position: absolute;
+  right: 27.5%;
+  top: 21.5%;
+  opacity: 0;
+}
+
+.desktopView form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 17.5rem;
+}
+
+.logoDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header .logo {
+    display: none;
+  }
+  main {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  main .hero {
+    background-image: url("../images/hero-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 40vw;
+  }
+  main .desktopView {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    height: 95.2vh;
+    position: relative;
+    width: 45%;
+  }
+  main .desktopView .logoDesktop {
+    display: block;
+    position: absolute;
+    top: 5%;
+    width: 27.5%;
+  }
+  main .desktopView h1 {
+    font-size: 4.5em;
+    width: 28rem;
+    text-align: start;
+    letter-spacing: 1.5rem;
+  }
+  main .desktopView .text {
+    font-size: 1.2em;
+    width: 28rem;
+    text-align: start;
+    padding: 0;
+  }
+  main .desktopView form {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=style.css.map */
