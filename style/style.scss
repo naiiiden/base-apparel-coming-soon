@@ -114,7 +114,7 @@ header {
         }
     }
 
-    main {
+    .maincontainer {
         min-height: 100vh;
         display: flex;
         flex-direction: row-reverse;
@@ -155,10 +155,6 @@ header {
                 width: 28rem;
                 text-align: start;
                 padding: 0;
-            }
-
-            form {
-                position: relative;
             }
         }
     }

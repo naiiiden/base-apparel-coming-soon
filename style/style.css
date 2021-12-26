@@ -164,7 +164,7 @@ header .logo {
   header .logo {
     display: none;
   }
-  main {
+  .maincontainer {
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -174,14 +174,14 @@ header .logo {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  main .hero {
+  .maincontainer .hero {
     background-image: url("../images/hero-desktop.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 40vw;
   }
-  main .desktopView {
+  .maincontainer .desktopView {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -193,26 +193,23 @@ header .logo {
     position: relative;
     width: 45%;
   }
-  main .desktopView .logoDesktop {
+  .maincontainer .desktopView .logoDesktop {
     display: block;
     position: absolute;
     top: 5%;
     width: 27.5%;
   }
-  main .desktopView h1 {
+  .maincontainer .desktopView h1 {
     font-size: 4.5em;
     width: 28rem;
     text-align: start;
     letter-spacing: 1.5rem;
   }
-  main .desktopView .text {
+  .maincontainer .desktopView .text {
     font-size: 1.2em;
     width: 28rem;
     text-align: start;
     padding: 0;
-  }
-  main .desktopView form {
-    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
