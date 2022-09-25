@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,7 +25,7 @@ img {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: hsl(228deg, 45%, 44%);
 }
 
 header .logo {
@@ -44,114 +43,80 @@ header .logo {
 
 .desktopView {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .desktopView h1 {
   text-align: center;
   width: 11rem;
-  letter-spacing: .35rem;
-  color: #413a3a;
+  letter-spacing: 0.35rem;
+  color: hsl(0deg, 6%, 24%);
 }
-
 .desktopView h1 span {
-  color: #ce9797;
+  color: hsl(0deg, 36%, 70%);
   font-weight: 300;
 }
-
 .desktopView .text {
-  padding: .5rem 1rem;
-  color: #ce9797;
+  padding: 0.5rem 1rem;
+  color: hsl(0deg, 36%, 70%);
   width: 19rem;
   font-size: 14px;
   line-height: 1.25rem;
   text-align: center;
 }
-
 .desktopView form {
   margin-top: 1.5rem;
   width: 17.5rem;
 }
-
 .desktopView form input {
   border-radius: 24px;
-  border: 1px solid #ce9797;
-  padding: .75rem;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  padding: 0.75rem;
   width: 100%;
 }
-
-.desktopView form ::-webkit-input-placeholder {
+.desktopView form ::-moz-placeholder {
   font-family: Josefin Sans;
-  color: #ce9797;
+  color: hsl(0deg, 36%, 70%);
 }
-
 .desktopView form :-ms-input-placeholder {
   font-family: Josefin Sans;
-  color: #ce9797;
+  color: hsl(0deg, 36%, 70%);
 }
-
-.desktopView form ::-ms-input-placeholder {
-  font-family: Josefin Sans;
-  color: #ce9797;
-}
-
 .desktopView form ::placeholder {
   font-family: Josefin Sans;
-  color: #ce9797;
+  color: hsl(0deg, 36%, 70%);
 }
-
 .desktopView form button {
   width: 20%;
-  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%) 0%, hsl(0deg, 74%, 74%) 100%);
   border: none;
   border-radius: 24px;
   position: absolute;
   right: 0%;
   height: 100%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .desktopView form button:hover {
   opacity: 80%;
   width: 25%;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
 .desktopView form .error {
-  color: #f96262;
+  color: hsl(0deg, 93%, 68%);
   position: absolute;
   bottom: -45%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .desktopView form .error-icon {
   position: absolute;
   right: 27.5%;
   top: 21.5%;
   opacity: 0;
 }
-
 .desktopView form .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   width: 17.5rem;
 }
@@ -166,13 +131,8 @@ header .logo {
   }
   .maincontainer {
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .maincontainer .hero {
     background-image: url("../images/hero-desktop.jpg");
@@ -182,12 +142,8 @@ header .logo {
     width: 40vw;
   }
   .maincontainer .desktopView {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
     gap: 2rem;
     height: 95.2vh;
     position: relative;
@@ -211,5 +167,4 @@ header .logo {
     text-align: start;
     padding: 0;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
